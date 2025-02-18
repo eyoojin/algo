@@ -1,6 +1,6 @@
 def solution(numbers):
-    numbers.sort(reverse=True) # 내림차순 정렬
-    return numbers[0] * numbers[1]
+    numbers.sort() # 오름차순 정렬
+    return numbers[-1] * numbers[-2]
     
 
 print(solution([1, 2, 3, 4, 5])) # 20
