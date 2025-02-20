@@ -1,7 +1,9 @@
 def solution(my_string):
     answer = ''
     vowels = 'aeiou'
-    if 
+    for word in my_string:
+        if word not in vowels:
+            answer += word
 
     return answer
 
