@@ -1,9 +1,11 @@
 def solution(my_string):
     answer = []
     for i in list(my_string):
-        if i in range(0, 10):
+        if i in list('0123456789'):
             answer.append(i)
-    answer.sort()        
+        answer = list(map(int, answer)) 
+    answer.sort()
+    
     return answer
 
     # 숫자가 스트링으로 인식돼서 안되는거 같다........
