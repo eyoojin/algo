@@ -1,5 +1,6 @@
 def solution(cipher, code):
     answer = ''
+    print(cipher)
     return answer
 
 print(solution("dfjardstddetckdaccccdegk", 4)) # "attack"
