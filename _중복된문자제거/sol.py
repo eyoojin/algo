@@ -5,7 +5,7 @@ def solution(my_string):
             if my_string[i] == my_string[j]:
                 answer += my_string[i]
 
-    return my_string
+    return answer
 
 print(solution("people")) # "peol"
 print(solution("We are the world")) # "We arthwold"
