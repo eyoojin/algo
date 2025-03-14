@@ -1,5 +1,5 @@
 def solution(hp):
-    while hp != 0:
+    # while hp != 0: -> 얘가 문제
 
         if hp % 5 == 0:
             return hp // 5
@@ -14,6 +14,4 @@ def solution(hp):
 print(solution(23)) # 5
 print(solution(24)) # 6
 print(solution(999)) # 201
-
-
-
+print(solution(0)) # 201
