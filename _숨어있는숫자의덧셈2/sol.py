@@ -1,7 +1,5 @@
 def solution(my_string):
     answer = 0
-    word1 = 'qwertyuiopasdfghjklzxcvbnm'
-    word2 = 'QWERTYUIOPASDFGHJKLZXCVBNM'
 
     for i in word1:
         my_string = my_string.replace(i, 'a')
