@@ -3,7 +3,10 @@ def solution(id_pw, db):
 
     for i in range(len(db)):
         if id_pw in db:
-            return 'login'
+            if id_pw[0] == db[i][0] and id_pw[1] == db[i][1]:
+                return 'login'
+            # else:
+            #     return 'wrong pw'
         else:
             return 'fail'
 
