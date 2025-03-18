@@ -13,9 +13,11 @@ def solution(bin1, bin2):
 
     answer = answer1 + answer2
 
-    for i in range(10):
-        if answer >= 2**i and answer < 2**(i+1):
-            for k in range(i):
+    if answer == 0:
+        return '0'
+    for a in range(10):
+        if answer >= 2**a and answer < 2**(a+1):
+            for k in range(a):
                 answer, b = divmod(answer, 2)
                 result.append(b)
 
