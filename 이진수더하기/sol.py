@@ -15,18 +15,15 @@ def solution(bin1, bin2):
 
     if answer == 0:
         return '0'
-    for a in range(10):
-        if answer >= 2**a and answer < 2**(a+1):
-            for k in range(a):
-                answer, b = divmod(answer, 2)
-                result.append(b)
+    while answer > 0:
+        answer, b = divmod(answer, 2)
+        result.append(b)
 
     result.append(answer)
+    result.pop()
     result = list(map(str, result))
 
     return ''.join(reversed(result))
-
-    # why...........
 
 print(solution('10', '11')) # 101
 print(solution('1001', '1111')) # 11000
