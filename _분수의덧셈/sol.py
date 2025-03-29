@@ -11,3 +11,5 @@ def solution(numer1, denom1, numer2, denom2):
 
 print(solution(1, 2, 3, 4)) # [5, 4]
 print(solution(9, 2, 1, 3)) # [29, 6]
+print(solution(2, 4, 2, 4))
+print(solution(2, 4, 1, 2))
