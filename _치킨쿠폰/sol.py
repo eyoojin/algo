@@ -1,11 +1,20 @@
 def solution(chicken):
-    answer = 0
-    
+  
     a, b = divmod(chicken, 10)
-    answer += a
-    while a == 0:
+    answer = a
+    remainder = b
+
+    while a >= 10:
         a, b = divmod(a, 10)
-        return answer
+        answer += a
+        remainder += b
+    
+    remainder += a
+    
+    if remainder >= 10:
+        return remainder//10 + answer
+    
+    return answer
 
     # 어려워........
 
