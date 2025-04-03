@@ -2,17 +2,12 @@ def solution(chicken):
   
     a, b = divmod(chicken, 10)
     answer = a
-    remainder = b
+    coupon = a + b
 
-    while a >= 10:
-        a, b = divmod(a, 10)
+    while coupon >= 10:
+        a, b = divmod(coupon, 10)
         answer += a
-        remainder += b
-    
-    remainder += a
-    
-    if remainder >= 10:
-        return remainder//10 + answer
+        coupon = a + b
     
     return answer
 
