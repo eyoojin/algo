@@ -1,8 +1,12 @@
 def solution(numbers, k):
     answer = []
+    a , b = divmod(k*2-1, len(numbers))
+    for i in range(a+1):
+        answer.append(numbers)
     
+    return answer[a][b-1]
 
-    return divmod(k, len(numbers))
+    
     
     
 
