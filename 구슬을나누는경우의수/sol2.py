@@ -8,7 +8,7 @@ def solution(balls, share):
     return fact(balls) / (fact(share) * fact(balls-share))
 
 
-# 런타임에러..
+# for문으로 변경
 
 print(solution(3, 2)) # 3
 print(solution(5, 3)) # 10
