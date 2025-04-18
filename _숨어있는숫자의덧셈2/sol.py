@@ -1,11 +1,10 @@
 def solution(my_string):
-    answer = 0
+    answer = my_string
+    result = []
 
-    for i in list(my_string):
-        if i == int(i):
-            answer += int(i)
+    # 모르겠다
 
-    return answer
+    return answer, my_string
 
 print(solution('aAb1B2cC34oOp')) # 37
 print(solution('1a2b3c4d123Z')) # 133
