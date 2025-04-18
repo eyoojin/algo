@@ -1,11 +1,19 @@
 def solution(n):
     answer = []
+    result = []
 
-    for i in range(2, n+1):
-        if n % i == 0:
-            answer.append(i)
-            n = n//i
-    return answer
+    for j in range(2, n+1):
+        if n % j == 0:
+            result.append(j)
+            n = n//j
+
+    for i in result:
+        for k in result:
+            a, b = divmod(i, k)
+            if a > 1 and b == 0:
+                answer.append(i)
+                
+    return list(set(result) - set(answer))
 
 print(solution(12)) # [2, 3]
 print(solution(17)) # [17]
