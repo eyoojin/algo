@@ -9,7 +9,9 @@ def solution(A, B):
     for i in range(len(A)):
         a = A.pop()
         A = [a] + A
+        answer.append(A)
         print(A)
+        print(answer)
 
     if list(B) in answer:
         return answer
