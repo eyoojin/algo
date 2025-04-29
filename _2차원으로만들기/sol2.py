@@ -1,7 +1,12 @@
 def solution(num_list, n):
     answer = []
-    for i in num_list:
-        answer.append([i])
+    for i in range(len(num_list)//n):
+        answer.append([0])
+    
+    
+
+
+    
     return answer
 
 print(solution([1, 2, 3, 4, 5, 6, 7, 8], 2)) 
